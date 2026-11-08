@@ -1,16 +1,7 @@
-# Vũ điệu cây xanh - Sứa Taho
+# Vũ điệu cây xanh — bản V2
 
-Deployment-only branch. Full game archive is stored as sequential binary chunks under `chunks/`.
-Render Build Command:
+Nguồn game là ZIP nhị phân được chia thành 18 phần trong thư mục chunks.
+Render build: `cat chunks/*.part > game.zip && unzip -qo game.zip && cd vu-dieu-cay-xanh && npm install --omit=dev`
+Render start: `cd vu-dieu-cay-xanh && npm start`
 
-```
-cat chunks/*.part > game.zip && unzip -qo game.zip && cd vu-dieu-cay-xanh && npm install --omit=dev
-```
-
-Render Start Command:
-
-```
-cd vu-dieu-cay-xanh && npm start
-```
-
-Health endpoint: `/api/health`.
+Bản V2: nền tràn màn hình, ba nút phía trên, hoạt ảnh ghép mềm hơn, giữ chế độ hai đội.
